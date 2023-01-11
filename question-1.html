@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Data Security 101 - Question 1</title>
+    <meta name="description" content="Question 1 of Data Security 101 Quiz." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/question-1-4-5-styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <div id="q1-main-container" class="question-main-container">
+        <div class="content-side-div">
+          <p class="question-number">1</p>
+          <h4 class="question-name">1/5 Password Management</h4>
+          <h2 class="question-description">
+            Many of our accounts are online these days and it can be difficult
+            to keep account information organized.
+          </h2>
+          <h4>Choose the statement that best describes you.</h4>
+
+          <div class="option-container-div">
+            <div id="q-1" class="option-div">
+              <p id="question-1-A">
+                I use the same password for most of my accounts.
+              </p>
+            </div>
+            <div id="feedback-1" class="answer-div">
+              <p>
+                This method can be very convenient, but is also very risky.
+                Imagine the damage that could be done if the wrong person got
+                their hands on your password.
+              </p>
+            </div>
+
+            <div id="q-2" class="option-div">
+              <p id="question-1-B">
+                I use the same 3-5 passwords for most of my accounts.
+              </p>
+            </div>
+            <div id="feedback-2" class="answer-div">
+              <p>
+                Using 3-5 passowrds is a great start but there is more you can
+                do to keep your accounts secure.
+              </p>
+            </div>
+
+            <div id="q-3" class="option-div">
+              <p id="question-1-C">
+                I use a random unique password for each of my accounts.
+              </p>
+            </div>
+            <div id="feedback-3" class="answer-div">
+              <p>
+                Your password management skills are on point. Using a unique
+                password for each account ensures that if one account is
+                compromised, the others are still safe.
+              </p>
+            </div>
+          </div>
+
+          <button id="scroll-down-button" class="scroll-down">
+            See Results
+          </button>
+        </div>
+
+        <div class="question-image-div">
+          <img class="question-image" src="images/q-1-hero.svg" />
+        </div>
+      </div>
+
+      <div id="results-section">
+        <a class="sticky-next-button" href="question-2.html"
+          ><button>Next Question</button>
+        </a>
+        <div class="grid-main-container">
+          <div class="results-column-container">
+            <h2>Password Management Results</h2>
+
+            <div class="grid-content results-r2-c1">
+              <h1 id="choice-percentage"></h1>
+              <h4 id="choice-text" class="green-text"></h4>
+            </div>
+
+            <div class="grid-content results-r2-c2">
+              <canvas id="response-data"></canvas>
+            </div>
+
+            <div class="grid-content results-r2-c3">
+              <h3 id="choice-outcome"></h3>
+              <h4 class="red-text">Read more below.</h4>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="learning-section-header">Data Security Learning Panel</h2>
+
+        <div class="learning-section">
+          <!-- Tab links -->
+          <div class="tab">
+            <button
+              id="defaultOpen"
+              class="tablinks"
+              onclick="openCity(event, 'tips')"
+            >
+              Quick Tips
+            </button>
+
+            <button class="tablinks" onclick="openCity(event, 'videos')">
+              Videos
+            </button>
+          </div>
+
+          <!-- Tab content -->
+
+          <div id="tips" class="tabcontent">
+            <div id="tip-content">
+              <h3 class="red-text">Quick Tips</h3>
+              <h4>
+                Hackers are constantly trying to tap into our accounts by
+                stealing passwords. If you use the same password for multiple
+                accounts, then your personal data is vulnerable.
+              </h4>
+              <p>
+                Effective password security is crucial to maintaining your data
+                security. The single most effective step you can take to secure
+                your accounts is to use a
+                <a href="https://passwords.google.com/"
+                  ><strong>password manager</strong>.</a
+                >
+              </p>
+              <img src="images/q1-tips-image.svg" />
+
+              <p>
+                A Password Manager is a tool that stores your usernames and
+                passwords in one secure place. A good password manager will
+                generate a unique password for each different account that you
+                use, and then automatically sign you in when needed. As long as
+                your password management account is secure, then so are your
+                accounts.
+              </p>
+
+              <p>
+                If you have a Google account then you have a password manager!
+                <a
+                  class="red-text"
+                  href="https://support.google.com/accounts/answer/6208650?hl=en"
+                  target="_blank"
+                  >Read more about Google’s built in password manager here.</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div id="videos" class="tabcontent">
+            <div id="video-content">
+              <h3 class="red-text">Video #1</h3>
+              <iframe
+                width="560"
+                height="350"
+                src="https://www.youtube.com/embed/Q0GeMSFGIgI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+
+              <h3 class="red-text">Video #2</h3>
+              <iframe
+                width="560"
+                height="350"
+                src="https://www.youtube.com/embed/xHSnHj-zKF4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="next-question-div">
+          <h2 class="green-text">
+            Next, learn to guard against phishing attacks.
+          </h2>
+          <img class="next-question-img" src="images/q-2-theme-image.svg" />
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/navbar.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="js/xapiwrapper.min.js"></script>
+    <script type="text/javascript" src="js/xapi-statement.js"></script>
+
+    <script src="js/q1.js" type="text/javascript"></script>
+  </body>
+</html>

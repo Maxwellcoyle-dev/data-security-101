@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Data Security 101 - Question 3</title>
+    <meta name="description" content="Question 3 of Data Security 101 Quiz." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/question-3.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <div id="q3-main-container" class="question-main-container">
+        <div class="content-side-div">
+          <p class="question-number">3</p>
+          <h4 class="question-name green-text">3/5 Email Security</h4>
+          <h2 class="question-description">
+            But wait! Can you identify the warning signs that this email is
+            dangerous?
+          </h2>
+          <h4 class="question">
+            Look at the image again and notice that there are 6 boxes, each
+            highlighting a section of the email. Which boxes highight a warning
+            sign?
+          </h4>
+
+          <div class="option-container-div">
+            <div id="q3-1" class="option-div">
+              <p id="question-3-A">A) Boxes 1, 2, 5</p>
+            </div>
+            <div id="q3-feedback-1" class="answer-div">
+              <p>
+                Not quite. Boxes 2, 4, and 5 highlight warning signs. Scroll
+                down to learn how you can spot similar phishing attacks in the
+                future.
+              </p>
+            </div>
+
+            <div id="q3-2" class="option-div">
+              <p id="question-3-B">B) Boxes 2, 4</p>
+            </div>
+            <div id="q3-feedback-2" class="answer-div">
+              <p>
+                Not quite. Boxes 2, 4, and 5 highlight warning signs. Scroll
+                down to learn how you can spot similar phishing attacks in the
+                future.
+              </p>
+            </div>
+
+            <div id="q3-3" class="option-div">
+              <p id="question-3-C">C) Boxes 3, 5</p>
+            </div>
+            <div id="q3-feedback-3" class="answer-div">
+              <p>
+                Not quite. Boxes 2, 4, and 5 highlight warning signs. Scroll
+                down to learn how you can spot similar phishing attacks in the
+                future.
+              </p>
+            </div>
+
+            <div id="q3-4" class="option-div">
+              <p id="question-3-D">D) Boxes 2, 4, 5</p>
+            </div>
+            <div id="q3-feedback-4" class="answer-div">
+              <p>
+                Exactly! Check out tips below on extra steps you can take to
+                gaurd against phishing atacks.
+              </p>
+            </div>
+
+            <button id="scroll-down-button" class="scroll-down">
+              See Results
+            </button>
+          </div>
+        </div>
+
+        <div class="question-image-div">
+          <img
+            class="question-image zoom"
+            src="images/q-3-hero-email-mockup.png"
+          />
+          <p>Click the image to zoom in.</p>
+        </div>
+      </div>
+
+      <div id="q3-results-section">
+        <a class="sticky-next-button" href="question-4.html"
+          ><button>Next Question</button>
+        </a>
+
+        <div class="grid-main-container">
+          <div class="results-column-container">
+            <div class="results-r1-c1-3">
+              <h2 class="green-text">Phishing Detection Results</h2>
+            </div>
+
+            <div class="grid-content results-r2-c1">
+              <h1 class="red-text" id="choice-percentage"></h1>
+              <h4 id="choice-text" class="green-text"></h4>
+            </div>
+
+            <div class="grid-content results-r2-c2">
+              <canvas class="filler-pie-chart" id="response-data"></canvas>
+            </div>
+
+            <div class="grid-content results-r2-c3">
+              <h1 id="choice-outcome" class="green-text"></h1>
+              <h4 id="choice-description" class="red-text"></h4>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="learning-section-header">Data Security Learning Panel</h2>
+
+        <div class="learning-section">
+          <!-- Tab links -->
+          <div class="tab">
+            <button
+              id="defaultOpen"
+              class="tablinks"
+              onclick="openCity(event, 'tips')"
+            >
+              Quick Tips
+            </button>
+
+            <button class="tablinks" onclick="openCity(event, 'videos')">
+              Videos
+            </button>
+          </div>
+
+          <!-- Tab content -->
+          <div id="tips" class="tabcontent">
+            <div id="tip-content">
+              <h3 class="red-text">Quick Tips</h3>
+              <h4>Let’s go over the warning signs</h4>
+              <p class="p-heading">
+                <strong>Unfamiliar or suspicious email addresses </strong>
+              </p>
+              <p class="p-content">
+                This email is designed to mimic a real Instagram support email,
+                but this email address doesn’t seem genuine. Phishing emails
+                often look very close to the real thing so it’s important to
+                double check the sender address before clicking any links or
+                attachments.
+              </p>
+
+              <img class="q3-tips-img-1" src="images/q3-tip1.png" />
+
+              <p class="p-heading">
+                <strong>Bad formatting and an unusual requests</strong>
+              </p>
+              <p class="p-content">
+                There are two things to note here. First, the instagram username
+                seems to be missing from the email. Often phishing emails will
+                lack key identifying details. Second, it is not normal for a
+                password to change on it’s own. It would be a good idea to test
+                the password to verify the validity of this email.
+              </p>
+
+              <img class="q3-tips-img-2" src="images/q-3-tip2.png" />
+
+              <p class="p-heading"><strong>Suspicious addresses</strong></p>
+              <p class="p-content">
+                Phishing emails will often contain small, almost unnoticeable
+                inconsistencies. Many times, recipients don’t even notice these
+                warning signs and click the link without hesitation. Before
+                clicking any links or attachments, it’s a good idea to scan over
+                the email to check for inconsistencies like this.
+              </p>
+
+              <img class="q3-tips-img-3" src="images/q-3-tip3.png" />
+            </div>
+          </div>
+
+          <div id="videos" class="tabcontent">
+            <div id="video-content">
+              <h3>Anatomy of scam emails</h3>
+              <iframe
+                width="560"
+                height="350"
+                src="https://www.youtube.com/embed/3gpOM9c6mmA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="next-question-div">
+          <div class="next-question-text">
+            <h2 class="green-text">
+              Next, learn how to protect your personal data by keeping your
+              software up to date.
+            </h2>
+            <br />
+          </div>
+
+          <div class="next-question-img">
+            <img src="images/q-4-hero.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/navbar.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+
+    <script type="text/javascript" src="js/xapiwrapper.min.js"></script>
+    <script type="text/javascript" src="js/xapi-statement.js"></script>
+
+    <script type="text/javascript" src="js/q3.js"></script>
+  </body>
+</html>

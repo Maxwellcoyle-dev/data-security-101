@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Data Security 101 - Question 2</title>
+    <meta name="description" content="Question 2 of Data Security 101 Quiz." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/question-2.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <div id="q2-main-container" class="question-main-container">
+        <div class="content-side-div">
+          <p class="question-number">2</p>
+          <p class="question-name">2/5 Phishing Attacks</p>
+          <h2 class="question-description">
+            Email attacks are growing in popularity. Take a look at a "real
+            life" email below.
+          </h2>
+          <p class="question">
+            Take a look at the email below. What would you do if you received
+            this email?
+          </p>
+
+          <div class="option-container-div">
+            <div id="q2-1" class="option-div">
+              <p id="question-2-A">Click the link to reset your password.</p>
+            </div>
+            <div id="q2-feedback-1" class="answer-div">
+              <p>
+                This email is actually a well disquised phishing attach.
+                Clicking the link in an email like this could cause you a lot of
+                trouble. Read more below.
+              </p>
+            </div>
+
+            <div id="q2-2" class="option-div">
+              <p id="question-2-B">
+                Delete the email right away and move on with your life.
+              </p>
+            </div>
+            <div id="q2-feedback-2" class="answer-div">
+              <p>
+                Good answer, deleting the email is a good way to protect
+                yourself in this situation. Read more below about more ways to
+                guard from phishing attacks.
+              </p>
+            </div>
+
+            <div id="q2-3" class="option-div">
+              <p id="question-2-C">Ignore the email altogether.</p>
+            </div>
+            <div id="q2-feedback-3" class="answer-div">
+              <p>
+                Ignoring the email is certainly better than clicking the link,
+                however deleting the email altogether would protect your even
+                more.
+              </p>
+            </div>
+
+            <div id="q2-4" class="option-div">
+              <p id="question-2-D">
+                Delete the email, then log in to your real Instagram account to
+                ensure that your username and password remain unchanged.
+              </p>
+            </div>
+            <div id="q2-feedback-4" class="answer-div">
+              <p>
+                Wow! You're very diligent about privacy and data security. Keep
+                up the good work!
+              </p>
+            </div>
+          </div>
+
+          <button id="scroll-down-button" class="scroll-down">
+            See Results
+          </button>
+        </div>
+
+        <div class="question-image-div">
+          <img
+            class="question-image zoom"
+            src="images/q-3-hero-email-mockup.png"
+          />
+          <h4>Click the image to zoom in.</h4>
+        </div>
+      </div>
+
+      <div id="q2-results-section">
+        <a class="sticky-next-button" href="question-3.html"
+          ><button>Next Question</button>
+        </a>
+
+        <div class="grid-main-container">
+          <div class="results-column-container">
+            <div class="results-r1-c1-3">
+              <h2 class="green-text">Phishing Attack Results</h2>
+            </div>
+
+            <div class="grid-content results-r2-c1">
+              <h1 id="choice-percentage"></h1>
+              <h4 id="choice-text" class="green-text"></h4>
+            </div>
+
+            <div class="grid-content results-r2-c2">
+              <canvas class="filler-pie-chart" id="response-data"></canvas>
+            </div>
+
+            <div class="grid-content results-r2-c3">
+              <h3 id="choice-outcome"></h3>
+              <h4 class="red-text">See your personalized tips below.</h4>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="learning-section-header">Data Security Learning Panel</h2>
+
+        <div class="learning-section">
+          <!-- Tab links -->
+          <div class="tab">
+            <button
+              id="defaultOpen"
+              class="tablinks"
+              onclick="openCity(event, 'tips')"
+            >
+              Quick Tips
+            </button>
+
+            <button class="tablinks" onclick="openCity(event, 'videos')">
+              Videos
+            </button>
+          </div>
+
+          <!-- Tab content -->
+          <div id="tips" class="tabcontent">
+            <div id="tip-content">
+              <h3 class="red-text">Quick Tips</h3>
+              <h4>What is a phishing attack?</h4>
+              <p class="p-span-2">
+                A phishing attack is an email engineered by hackers designed to
+                steal personal information by getting you to do a specific task.
+                Think about the example email above. It was designed to steal
+                Instagram account credentials from unsuspecting users.
+              </p>
+              <br />
+
+              <p>Key warning signs of a phishing attack:</p>
+              <ol>
+                <li>
+                  Any email demanding urgent action. Some of the most successful
+                  phishing attacks have disguised themselves as things like:
+                </li>
+                <ul>
+                  <li>
+                    An urgent email from the boss or CEO asking for an emergency
+                    wire transfer
+                  </li>
+                  <li>
+                    A subscription service that needs updated payment
+                    information within a short period of time
+                  </li>
+                  <li>
+                    An emergency request asking you to update account
+                    information
+                  </li>
+                </ul>
+                <li>
+                  Emails with bad grammar, misspelled words, formatting errors,
+                  or logos that don’t look right
+                </li>
+                <li>
+                  Unfamiliar or inconsistent email addresses, links and domain
+                  names
+                </li>
+                <li>Emails requesting any type of sensitive data</li>
+                <li>Emails that are too good to be true</li>
+              </ol>
+
+              <img src="images/q-2-tips-image.svg" />
+            </div>
+          </div>
+
+          <div id="videos" class="tabcontent">
+            <div id="video-content">
+              <h3>What is a phishing attack</h3>
+              <iframe
+                width="560"
+                height="350"
+                src="https://www.youtube.com/embed/Y7zNlEMDmI4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="next-question-div">
+            <div class="next-question-text">
+              <h2 class="green-text">
+                Next, take another look at the phishing email and identify the
+                warning signs.
+              </h2>
+              <br />
+              <a href="question-3.html"><button>Next Question</button></a>
+            </div>
+
+            <div class="next-question-img">
+              <img src="images/q-3-theme-image.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/navbar.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="js/xapiwrapper.min.js"></script>
+    <script type="text/javascript" src="js/xapi-statement.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+
+    <script src="js/q2.js" type="text/javascript"></script>
+  </body>
+</html>

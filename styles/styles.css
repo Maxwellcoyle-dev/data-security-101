@@ -1,0 +1,131 @@
+:root {
+  --primary-green: #007172;
+  --primary-red: #D94F04;
+  --secondary-yellow: #FDFCDC;
+  --secondary-green:#CBDAD5;
+  --secondary-red:#FFE1DD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1, h2, h3, h5 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  line-height: 2.75rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  line-height: 2rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: .6rem;
+  font-weight: 500;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.4rem;
+  font-size: 1rem;
+}
+
+ul {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.4rem;
+  font-size: .9rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+span {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+li {
+  font-family: 'Source Sans Pro', sans-serif;
+  list-style-position: inside;
+  text-indent: -1.2rem;
+  padding-left: 1.5rem;
+}
+
+.red-text {
+  color: var(--primary-red);
+}
+
+.green-text {
+ color: var(--primary-green);
+}
+
+.yellow-text {
+  color: var(--secondary-yellow);
+ }
+
+ button {
+  padding: .5rem 1.5rem;
+  background-color: var(--primary-red);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+button:hover {
+  transition: 0.3s ease;
+  background-color: var(--primary-green);
+}
+
+
+/* GLOBAL SCROLL BAR STYLES */
+
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: .75rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-red);
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #006667;
+}
